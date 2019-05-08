@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+$main-color: #444;
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+  color: $main-color;
+  margin: 0;
+  font: 16px 'Montserrat', 'Helvetica', sans-serif;
+}
+
+.header {
+    background-color: #8c959d;
+
+    &__contacts {
+        background-color: #fff;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list,
+    &__contacts {
+        display: flex;
+    }
+}
+
+.info-list {
+    display: flex;
+    align-items: center;
+    &__item {
+        padding-left: 70px;
+        color: #e9edf1;
+    }
+
+    &__title {
+        font-size: 14px;
+        margin: 0;
+
+        &--bold {
+            color: #676b6f;
+            font-weight: 900;
+        }
+
+        &--light{
+            color: #a4a8ac;
+        }
+    }
+
+    &__link {
+        margin: 0 2px;
+        display: inline-block;
+        font-size: 20px;
+        background-color: #ebebed;
+        color: #9ba7b2;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        padding-top: 2px;
+        transition: all 150ms ease-out;
+    }
+}
+
+.info-list__item--iconHome {
+    background-image: url(../images/home.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+
+.info-list__item--iconClock {
+    background-image: url(../images/clock-circular-outline.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    line-height: 1.6;
+    border-radius: 20px; 
+    user-select: none;
+    background-color: #fd7062;
+    color:#fff;
+    font-weight: 900;
+}
+
+.btn-icon svg{
+    display: inline-block;
+    vertical-align: middle;
+}
+
